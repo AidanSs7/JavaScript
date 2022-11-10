@@ -11,13 +11,14 @@
         let nome = prompt("Digite o Nome do Produto:");
         let custoFabr = prompt("Digite o custo de Fabrica:");
         let impostos = prompt("Digite a porcentagem de taxas de Imposto:");
-        
+        let calculo = (Number(custoFabr)) * (Number(impostos)/100); 
+        let resultFinal = (Number(calculo)) + (Number(custoFabr));
+       
 
-        let precoFinal = (Number(horas)*60)*60
+
         window.document.write("Nome do Produto: " + nome + "<br>");
-        window.document.write("As Horas: " + horas + ":" + minutos + ":"+ segundos + "<br>");
-        window.document.write("As Horas Convertidas em Segundos: " + temp + "<br>");
-
+        window.document.write("Preço Final "+ resultFinal);
+        
     </script>
 </body>
 </html>

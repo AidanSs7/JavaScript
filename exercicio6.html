@@ -8,18 +8,13 @@
 </head>
 <body>
     <script>
-        let horas = prompt("Dolar:");
-        let minutos = prompt("Digite o minutos:");
-        let segundos = prompt("Digite os Segundos:");
-        
+        let valorDolar = prompt("Digite o Preço do Dolar em Real(obs: separar com ponto): ")
+        let dolarReal = prompt("Quantos Dolar Voçê tem? ")
 
-        let horaSeg = (Number(horas)*60)*60
-        let minutosSeg = Number(minutos)*60
-        let temp = Number(horaSeg) + Number(minutosSeg) + Number(segundos)
-        window.document.write("Convertendo as Horas Para Segundos");
-        window.document.write("As Horas: " + horas + ":" + minutos + ":"+ segundos + "<br>");
-        window.document.write("As Horas Convertidas em Segundos: " + temp + "<br>");
+        let convesao = Number(valorDolar)*Number(dolarReal)
 
+        document.write("A Quantia de $" + dolarReal + "<br>")
+        document.write("para Real é de R$" + convesao)
     </script>
 </body>
 </html>
